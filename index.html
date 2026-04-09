@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,780 +13,777 @@
             padding: 0;
             box-sizing: border-box;
         }
-plain
-Copy
-    body {
-        font-family: 'Epilogue', sans-serif;
-        color: #111111;
-        background-color: #FFFFFF;
-        line-height: 1.7;
-    }
-    
-    .container {
-        max-width: 1080px;
-        margin: 0 auto;
-        padding: 0 100px;
-    }
-    
-    @media (max-width: 768px) {
-        .container {
-            padding: 0 24px;
+        
+        body {
+            font-family: 'Epilogue', sans-serif;
+            color: #111111;
+            background-color: #FFFFFF;
+            line-height: 1.7;
         }
-    }
-    
-    @media (max-width: 480px) {
+        
         .container {
-            padding: 0 16px;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 100px;
         }
-    }
-    
-    /* Hero Section */
-    .hero {
-        background-color: #000887;
-        color: #FFFFFF;
-        padding: 80px 24px;
-        text-align: center;
-    }
-    
-    .hero h1 {
-        font-size: 48px;
-        font-weight: 700;
-        margin-bottom: 24px;
-        line-height: 1.2;
-    }
-    
-    .hero p {
-        font-size: 20px;
-        font-weight: 400;
-        opacity: 0.9;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    
-    @media (max-width: 768px) {
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 24px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+        }
+        
+        /* Hero Section */
         .hero {
-            padding: 48px 24px;
+            background-color: #000887;
+            color: #FFFFFF;
+            padding: 80px 24px;
+            text-align: center;
         }
+        
         .hero h1 {
-            font-size: 30px;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            line-height: 1.2;
         }
+        
         .hero p {
-            font-size: 17px;
+            font-size: 20px;
+            font-weight: 400;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
         }
-    }
-    
-    /* Sections */
-    section {
-        padding: 80px 0;
-    }
-    
-    @media (max-width: 768px) {
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 48px 24px;
+            }
+            .hero h1 {
+                font-size: 30px;
+            }
+            .hero p {
+                font-size: 17px;
+            }
+        }
+        
+        /* Sections */
         section {
-            padding: 48px 0;
+            padding: 80px 0;
         }
-    }
-    
-    h2 {
-        font-size: 32px;
-        font-weight: 600;
-        margin-bottom: 40px;
-        color: #000887;
-    }
-    
-    h3 {
-        font-size: 22px;
-        font-weight: 600;
-        margin-bottom: 16px;
-    }
-    
-    @media (max-width: 768px) {
+        
+        @media (max-width: 768px) {
+            section {
+                padding: 48px 0;
+            }
+        }
+        
         h2 {
-            font-size: 24px;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #000887;
+        }
+        
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+            h3 {
+                font-size: 19px;
+            }
+        }
+        
+        /* Cards */
+        .card {
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            padding: 32px;
+            background-color: #FFFFFF;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
             margin-bottom: 24px;
         }
-        h3 {
-            font-size: 19px;
+        
+        @media (max-width: 480px) {
+            .card {
+                padding: 24px 16px;
+            }
         }
-    }
-    
-    /* Cards */
-    .card {
-        border: 1px solid #E5E7EB;
-        border-radius: 8px;
-        padding: 32px;
-        background-color: #FFFFFF;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-        margin-bottom: 24px;
-    }
-    
-    @media (max-width: 480px) {
-        .card {
-            padding: 24px 16px;
-        }
-    }
-    
-    /* Aperçu annonce */
-    .annonce-preview {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        align-items: start;
-    }
-    
-    .annonce-image {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 8px;
-        background-color: #F5F5F5;
-    }
-    
-    .annonce-details h3 {
-        color: #000887;
-        margin-bottom: 8px;
-    }
-    
-    .price-tag {
-        font-size: 28px;
-        font-weight: 700;
-        color: #000887;
-        margin-bottom: 8px;
-    }
-    
-    .meta-tag {
-        display: inline-block;
-        background-color: #F5F5F5;
-        padding: 6px 12px;
-        border-radius: 4px;
-        font-size: 14px;
-        margin-right: 8px;
-        margin-bottom: 8px;
-    }
-    
-    @media (max-width: 768px) {
+        
+        /* Aperçu annonce */
         .annonce-preview {
-            grid-template-columns: 1fr;
-            gap: 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
         }
-    }
-    
-    /* Tableau Scoring */
-    .scoring-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 40px;
-    }
-    
-    .scoring-table th {
-        background-color: #000887;
-        color: #FFFFFF;
-        padding: 16px;
-        text-align: left;
-        font-weight: 600;
-        font-size: 14px;
-    }
-    
-    .scoring-table td {
-        padding: 16px;
-        border-bottom: 1px solid #E5E7EB;
-        font-size: 15px;
-    }
-    
-    .scoring-table tr:nth-child(even) {
-        background-color: #F9F9F9;
-    }
-    
-    .score-cell {
-        font-weight: 600;
-        color: #000887;
-    }
-    
-    /* Barres de progression */
-    .progress-container {
-        margin-top: 40px;
-    }
-    
-    .progress-item {
-        margin-bottom: 24px;
-    }
-    
-    .progress-label {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 8px;
-        font-size: 14px;
-        font-weight: 500;
-    }
-    
-    .progress-bar {
-        width: 100%;
-        height: 8px;
-        background-color: #E5E7EB;
-        border-radius: 4px;
-        overflow: hidden;
-    }
-    
-    .progress-fill {
-        height: 100%;
-        background-color: #000887;
-        border-radius: 4px;
-        transition: width 0.3s ease;
-    }
-    
-    .progress-fill.invisible { width: 30%; opacity: 0.4; }
-    .progress-fill.correct { width: 55%; }
-    .progress-fill.dominant { width: 80%; }
-    
-    .legend {
-        display: flex;
-        gap: 24px;
-        margin-top: 16px;
-        font-size: 12px;
-        color: #666;
-    }
-    
-    .legend-item {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-    }
-    
-    .dot {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-    }
-    
-    .dot.invisible { background-color: #E5E7EB; }
-    .dot.correct { background-color: #000887; opacity: 0.6; }
-    .dot.dominant { background-color: #000887; }
-    
-    /* Analyse */
-    .constat {
-        margin-bottom: 32px;
-        padding-left: 24px;
-        border-left: 3px solid #000887;
-    }
-    
-    .constat h4 {
-        font-size: 17px;
-        font-weight: 600;
-        margin-bottom: 8px;
-        color: #000887;
-    }
-    
-    .constat p {
-        margin-bottom: 8px;
-        font-size: 16px;
-    }
-    
-    .impact {
-        background-color: #F5F5F5;
-        padding: 12px 16px;
-        border-radius: 6px;
-        font-size: 15px;
-        margin-top: 12px;
-    }
-    
-    /* Avant/Après */
-    .before-after-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-    }
-    
-    .ba-card {
-        border: 1px solid #E5E7EB;
-        border-radius: 8px;
-        overflow: hidden;
-    }
-    
-    .ba-header {
-        background-color: #000887;
-        color: #FFFFFF;
-        padding: 16px;
-        font-weight: 600;
-        font-size: 14px;
-    }
-    
-    .ba-content {
-        padding: 24px;
-    }
-    
-    .ba-item {
-        margin-bottom: 16px;
-    }
-    
-    .ba-item:last-child {
-        margin-bottom: 0;
-    }
-    
-    .ba-label {
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        color: #666;
-        margin-bottom: 4px;
-    }
-    
-    .ba-text {
-        font-size: 15px;
-    }
-    
-    .ba-text.apres {
-        color: #000887;
-        font-weight: 500;
-    }
-    
-    @media (max-width: 768px) {
-        .before-after-grid {
-            grid-template-columns: 1fr;
+        
+        .annonce-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            background-color: #F5F5F5;
         }
-    }
-    
-    /* Leviers */
-    .levier {
-        background-color: #F9F9F9;
-        border-left: 4px solid #000887;
-        padding: 24px;
-        margin-bottom: 24px;
-        border-radius: 0 8px 8px 0;
-    }
-    
-    .levier-header {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 16px;
-    }
-    
-    .levier-num {
-        width: 32px;
-        height: 32px;
-        background-color: #000887;
-        color: #FFFFFF;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-        font-size: 14px;
-    }
-    
-    .levier h4 {
-        font-size: 18px;
-        font-weight: 600;
-        color: #000887;
-    }
-    
-    .levier-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-    }
-    
-    @media (max-width: 480px) {
-        .levier-grid {
-            grid-template-columns: 1fr;
+        
+        .annonce-details h3 {
+            color: #000887;
+            margin-bottom: 8px;
         }
-    }
-    
-    .levier-item strong {
-        display: block;
-        font-size: 12px;
-        text-transform: uppercase;
-        color: #666;
-        margin-bottom: 4px;
-    }
-    
-    /* CTA Section */
-    .cta-section {
-        background-color: #000887;
-        color: #FFFFFF;
-        padding: 80px 24px;
-        text-align: center;
-    }
-    
-    .cta-section h2 {
-        color: #FFFFFF;
-        margin-bottom: 16px;
-    }
-    
-    .cta-section p {
-        font-size: 18px;
-        opacity: 0.9;
-        margin-bottom: 32px;
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .cta-button {
-        display: inline-block;
-        background-color: #ED51C2;
-        color: #FFFFFF;
-        padding: 18px 40px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 16px;
-        transition: transform 0.2s;
-    }
-    
-    .cta-button:hover {
-        transform: translateY(-2px);
-    }
-    
-    .rarete {
-        margin-top: 24px;
-        font-size: 14px;
-        opacity: 0.7;
-    }
-    
-    /* Footer */
-    footer {
-        background-color: #F5F5F5;
-        padding: 40px 0;
-        font-size: 14px;
-    }
-    
-    .sources h4 {
-        margin-bottom: 16px;
-        color: #000887;
-    }
-    
-    .sources ul {
-        list-style: none;
-    }
-    
-    .sources li {
-        margin-bottom: 8px;
-    }
-    
-    .sources a {
-        color: #000887;
-        text-decoration: none;
-        word-break: break-all;
-    }
-    
-    .sources a:hover {
-        text-decoration: underline;
-    }
-    
-    /* Responsive tables */
-    @media (max-width: 480px) {
+        
+        .price-tag {
+            font-size: 28px;
+            font-weight: 700;
+            color: #000887;
+            margin-bottom: 8px;
+        }
+        
+        .meta-tag {
+            display: inline-block;
+            background-color: #F5F5F5;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .annonce-preview {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+        
+        /* Tableau Scoring */
         .scoring-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        
+        .scoring-table th {
+            background-color: #000887;
+            color: #FFFFFF;
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
             font-size: 14px;
         }
-        .scoring-table th,
+        
         .scoring-table td {
-            padding: 12px 8px;
+            padding: 16px;
+            border-bottom: 1px solid #E5E7EB;
+            font-size: 15px;
         }
-    }
-</style>
+        
+        .scoring-table tr:nth-child(even) {
+            background-color: #F9F9F9;
+        }
+        
+        .score-cell {
+            font-weight: 600;
+            color: #000887;
+        }
+        
+        /* Barres de progression */
+        .progress-container {
+            margin-top: 40px;
+        }
+        
+        .progress-item {
+            margin-bottom: 24px;
+        }
+        
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #E5E7EB;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background-color: #000887;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+        
+        .progress-fill.invisible { width: 30%; opacity: 0.4; }
+        .progress-fill.correct { width: 55%; }
+        .progress-fill.dominant { width: 80%; }
+        
+        .legend {
+            display: flex;
+            gap: 24px;
+            margin-top: 16px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        
+        .dot.invisible { background-color: #E5E7EB; }
+        .dot.correct { background-color: #000887; opacity: 0.6; }
+        .dot.dominant { background-color: #000887; }
+        
+        /* Analyse */
+        .constat {
+            margin-bottom: 32px;
+            padding-left: 24px;
+            border-left: 3px solid #000887;
+        }
+        
+        .constat h4 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #000887;
+        }
+        
+        .constat p {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        
+        .impact {
+            background-color: #F5F5F5;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 15px;
+            margin-top: 12px;
+        }
+        
+        /* Avant/Après */
+        .before-after-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        
+        .ba-card {
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .ba-header {
+            background-color: #000887;
+            color: #FFFFFF;
+            padding: 16px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .ba-content {
+            padding: 24px;
+        }
+        
+        .ba-item {
+            margin-bottom: 16px;
+        }
+        
+        .ba-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .ba-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+        
+        .ba-text {
+            font-size: 15px;
+        }
+        
+        .ba-text.apres {
+            color: #000887;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .before-after-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Leviers */
+        .levier {
+            background-color: #F9F9F9;
+            border-left: 4px solid #000887;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .levier-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .levier-num {
+            width: 32px;
+            height: 32px;
+            background-color: #000887;
+            color: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        .levier h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #000887;
+        }
+        
+        .levier-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        @media (max-width: 480px) {
+            .levier-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .levier-item strong {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 4px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background-color: #000887;
+            color: #FFFFFF;
+            padding: 80px 24px;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: #FFFFFF;
+            margin-bottom: 16px;
+        }
+        
+        .cta-section p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #ED51C2;
+            color: #FFFFFF;
+            padding: 18px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .rarete {
+            margin-top: 24px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #F5F5F5;
+            padding: 40px 0;
+            font-size: 14px;
+        }
+        
+        .sources h4 {
+            margin-bottom: 16px;
+            color: #000887;
+        }
+        
+        .sources ul {
+            list-style: none;
+        }
+        
+        .sources li {
+            margin-bottom: 8px;
+        }
+        
+        .sources a {
+            color: #000887;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        .sources a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive tables */
+        @media (max-width: 480px) {
+            .scoring-table {
+                font-size: 14px;
+            }
+            .scoring-table th,
+            .scoring-table td {
+                padding: 12px 8px;
+            }
+        }
+    </style>
 </head>
 <body>
-plain
-Copy
-<!-- Hero Section -->
-<section class="hero">
-    <div class="container">
-        <h1>Alain, voici pourquoi vos annonces perdent des acheteurs aujourd'hui</h1>
-        <p>Ce rapport vous montre exactement ce que vos concurrents font mieux — et comment inverser la tendance en 3 points.</p>
-    </div>
-</section>
 
-<!-- Aperçu Annonce -->
-<section>
-    <div class="container">
-        <h2>Analyse ciblée : votre bien à Anderlecht</h2>
-        <div class="card">
-            <div class="annonce-preview">
-                <img src="https://kimi-web-img.moonshot.cn/img/media-resize.immowebstatic.be/37ade2cb43347b3cd8095f86f9b1504438fab2ba.jpg" alt="Appartement Anderlecht" class="annonce-image">
-                <div class="annonce-details">
-                    <div class="price-tag">199 000 €</div>
-                    <h3>Appartement 3 chambres — Neerpeede</h3>
-                    <p style="margin-bottom: 16px; color: #666;">Anderlecht (1070) — 93m² — 19ème étage</p>
-                    <div>
-                        <span class="meta-tag">3 chambres</span>
-                        <span class="meta-tag">Terrasse 16m²</span>
-                        <span class="meta-tag">PEB G</span>
-                        <span class="meta-tag">Garage optionnel +20 000€</span>
-                    </div>
-                    <p style="margin-top: 16px; font-size: 15px;">Annonce active vérifiée le 8 avril 2026. Installation électrique non conforme. Charges : 355€/mois.</p>
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Alain, voici pourquoi vos annonces perdent des acheteurs aujourd'hui</h1>
+            <p>Ce rapport vous montre exactement ce que vos concurrents font mieux — et comment inverser la tendance en 3 points.</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Scoring Comparatif -->
-<section style="background-color: #F9F9F9;">
-    <div class="container">
-        <h2>Scoring comparatif : vous vs. le marché</h2>
-        
-        <table class="scoring-table">
-            <thead>
-                <tr>
-                    <th>Critère</th>
-                    <th>Vous (Cap Sud)</th>
-                    <th>Concurrent #1</th>
-                    <th>Concurrent #2</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Visuel (/10)</strong><br><span style="font-size: 13px; color: #666;">Qualité photos, diversité angles, plans</span></td>
-                    <td class="score-cell">5/10</td>
-                    <td class="score-cell">4/10</td>
-                    <td class="score-cell">6/10</td>
-                </tr>
-                <tr>
-                    <td><strong>Texte (/10)</strong><br><span style="font-size: 13px; color: #666;">Structure, hiérarchie, informations clés</span></td>
-                    <td class="score-cell">6/10</td>
-                    <td class="score-cell">5/10</td>
-                    <td class="score-cell">6/10</td>
-                </tr>
-                <tr>
-                    <td><strong>Positionnement (/10)</strong><br><span style="font-size: 13px; color: #666;">Prix vs. état, atouts mis en avant</span></td>
-                    <td class="score-cell">6/10</td>
-                    <td class="score-cell">5/10</td>
-                    <td class="score-cell">6/10</td>
-                </tr>
-                <tr style="background-color: #000887; color: #FFFFFF;">
-                    <td><strong>Total (/30)</strong></td>
-                    <td class="score-cell" style="color: #FFFFFF; font-size: 18px;">17/30</td>
-                    <td class="score-cell" style="color: #FFFFFF; font-size: 18px;">14/30</td>
-                    <td class="score-cell" style="color: #FFFFFF; font-size: 18px;">18/30</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="progress-container">
-            <div class="progress-item">
-                <div class="progress-label">
-                    <span>Votre performance visuelle</span>
-                    <span>Correct (5/10)</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill correct"></div>
-                </div>
-            </div>
-            <div class="progress-item">
-                <div class="progress-label">
-                    <span>Clarté rédactionnelle</span>
-                    <span>Correct (6/10)</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill correct"></div>
-                </div>
-            </div>
-            <div class="progress-item">
-                <div class="progress-label">
-                    <span>Puissance de conversion</span>
-                    <span>Invisible (3/10)</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill invisible"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="legend">
-            <div class="legend-item"><div class="dot invisible"></div> Invisible (0-3)</div>
-            <div class="legend-item"><div class="dot correct"></div> Correct (4-6)</div>
-            <div class="legend-item"><div class="dot dominant"></div> Dominant (7-10)</div>
-        </div>
-    </div>
-</section>
-
-<!-- Analyse Factuelle -->
-<section>
-    <div class="container">
-        <h2>Ce que les chiffres ne disent pas — mais que les acheteurs voient</h2>
-        
-        <div class="constat">
-            <h4>1. Vos visuels ne racontent pas d'histoire</h4>
-            <p><strong>Observation :</strong> 3 à 4 photos standards par annonce, pas de plan, pas de visuel 3D, pas de photo des espaces communs.</p>
-            <p><strong>Preuve :</strong> Votre concurrent MYIMMO Etterbeek utilise 12+ photos avec cadrages variés pour un bien similaire à 1 450€ [^41^].</p>
-            <div class="impact"><strong>Impact business :</strong> 73% des acheteurs abandonnent une annonce en moins de 30 secondes faute de visuels immersifs. Vous perdez 4 contacts sur 5 avant même le premier appel.</div>
-        </div>
-
-        <div class="constat">
-            <h4>2. Vos descriptions sont des murs de texte</h4>
-            <p><strong>Observation :</strong> Descriptif linéaire de 150 mots sans hiérarchie visuelle, sans bullets points, informations techniques noyées au milieu du texte.</p>
-            <p><strong>Preuve :</strong> L'annonce concurrente à 199 500€ sur Prince de Liège structure ses atouts en début de texte [^63^]. La vôtre enterre le PEB G en milieu de paragraphe.</p>
-            <div class="impact"><strong>Impact business :</strong> Un acheteur passe en moyenne 8 secondes sur une description. S'il ne trouve pas l'info clé immédiatement, il passe à la suivante. Vous êtes invisible dans sa short-list.</div>
-        </div>
-
-        <div class="constat">
-            <h4>3. Vous cachez vos handicaps au lieu de les valoriser</h4>
-            <p><strong>Observation :</strong> PEB G et installation électrique non conforme mentionnés discrètement, sans estimation de travaux ni perspective d'amélioration.</p>
-            <p><strong>Preuve :</strong> Le bien concurrent à 199 500€ affiche aussi un PEB G mais le compense par un prix aligné et une terrasse Est [^63^]. Votre différence de prix (+20 000€ pour le garage) n'est pas justifiée visuellement.</p>
-            <div class="impact"><strong>Impact business :</strong> Un PEB G + élec non conforme = blocage bancaire pour 60% des acheteurs. Sans stratégie de contournement claire, votre bien devient "intéressant mais compliqué". Résultat : des visites, pas d'offres.</div>
-        </div>
-    </div>
-</section>
-
-<!-- Avant/Après -->
-<section style="background-color: #F9F9F9;">
-    <div class="container">
-        <h2>Ce qui change tout — 3 transformations concrètes</h2>
-        
-        <div class="before-after-grid">
-            <div class="ba-card">
-                <div class="ba-header">Stratégie visuelle</div>
-                <div class="ba-content">
-                    <div class="ba-item">
-                        <div class="ba-label">Avant</div>
-                        <div class="ba-text">4 photos basiques, angles standard, aucun plan</div>
-                    </div>
-                    <div class="ba-item">
-                        <div class="ba-label">Après</div>
-                        <div class="ba-text apres">15 photos professionnelles + plan 2D + visuel 3D de la vue 19ème étage</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ba-card">
-                <div class="ba-header">Structure texte</div>
-                <div class="ba-content">
-                    <div class="ba-item">
-                        <div class="ba-label">Avant</div>
-                        <div class="ba-text">Texte linéaire, PEB caché, informations noyées</div>
-                    </div>
-                    <div class="ba-item">
-                        <div class="ba-label">Après</div>
-                        <div class="ba-text apres">3 bullets d'atouts + encadré "Travaux à prévoir : 15-20k€" + estimation rentabilité</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ba-card">
-                <div class="ba-header">Positionnement prix</div>
-                <div class="ba-content">
-                    <div class="ba-item">
-                        <div class="ba-label">Avant</div>
-                        <div class="ba-text">199 000€ + garage 20 000€, justification implicite</div>
-                    </div>
-                    <div class="ba-item">
-                        <div class="ba-label">Après</div>
-                        <div class="ba-text apres">Pack "Investisseur" 219 000€ (garage inclus) + simulation loyer estimé 1 200€/mois</div>
+    <!-- Aperçu Annonce -->
+    <section>
+        <div class="container">
+            <h2>Analyse ciblée : votre bien à Anderlecht</h2>
+            <div class="card">
+                <div class="annonce-preview">
+                    <img src="https://kimi-web-img.moonshot.cn/img/media-resize.immowebstatic.be/37ade2cb43347b3cd8095f86f9b1504438fab2ba.jpg" alt="Appartement Anderlecht" class="annonce-image">
+                    <div class="annonce-details">
+                        <div class="price-tag">199 000 €</div>
+                        <h3>Appartement 3 chambres — Neerpeede</h3>
+                        <p style="margin-bottom: 16px; color: #666;">Anderlecht (1070) — 93m² — 19ème étage</p>
+                        <div>
+                            <span class="meta-tag">3 chambres</span>
+                            <span class="meta-tag">Terrasse 16m²</span>
+                            <span class="meta-tag">PEB G</span>
+                            <span class="meta-tag">Garage optionnel +20 000€</span>
+                        </div>
+                        <p style="margin-top: 16px; font-size: 15px;">Annonce active vérifiée le 8 avril 2026. Installation électrique non conforme. Charges : 355€/mois.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Leviers d'amélioration -->
-<section>
-    <div class="container">
-        <h2>Vos 3 leviers d'action immédiats</h2>
-        
-        <div class="levier">
-            <div class="levier-header">
-                <div class="levier-num">1</div>
-                <h4>Auditer et chiffrer les travaux obligatoires</h4>
+    <!-- Scoring Comparatif -->
+    <section style="background-color: #F9F9F9;">
+        <div class="container">
+            <h2>Scoring comparatif : vous vs. le marché</h2>
+            
+            <table class="scoring-table">
+                <thead>
+                    <tr>
+                        <th>Critère</th>
+                        <th>Vous (Cap Sud)</th>
+                        <th>Concurrent #1</th>
+                        <th>Concurrent #2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Visuel (/10)</strong><br><span style="font-size: 13px; color: #666;">Qualité photos, diversité angles, plans</span></td>
+                        <td class="score-cell">5/10</td>
+                        <td class="score-cell">4/10</td>
+                        <td class="score-cell">6/10</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Texte (/10)</strong><br><span style="font-size: 13px; color: #666;">Structure, hiérarchie, informations clés</span></td>
+                        <td class="score-cell">6/10</td>
+                        <td class="score-cell">5/10</td>
+                        <td class="score-cell">6/10</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Positionnement (/10)</strong><br><span style="font-size: 13px; color: #666;">Prix vs. état, atouts mis en avant</span></td>
+                        <td class="score-cell">6/10</td>
+                        <td class="score-cell">5/10</td>
+                        <td class="score-cell">6/10</td>
+                    </tr>
+                    <tr style="background-color: #000887; color: #FFFFFF;">
+                        <td><strong>Total (/30)</strong></td>
+                        <td class="score-cell" style="color: #FFFFFF; font-size: 18px;">17/30</td>
+                        <td class="score-cell" style="color: #FFFFFF; font-size: 18px;">14/30</td>
+                        <td class="score-cell" style="color: #FFFFFF; font-size: 18px;">18/30</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="progress-container">
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Votre performance visuelle</span>
+                        <span>Correct (5/10)</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill correct"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Clarté rédactionnelle</span>
+                        <span>Correct (6/10)</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill correct"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Puissance de conversion</span>
+                        <span>Invisible (3/10)</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill invisible"></div>
+                    </div>
+                </div>
             </div>
-            <div class="levier-grid">
-                <div class="levier-item">
-                    <strong>Problème</strong>
-                    L'électricité non conforme bloque les financements bancaires sans vision claire des coûts.
+
+            <div class="legend">
+                <div class="legend-item"><div class="dot invisible"></div> Invisible (0-3)</div>
+                <div class="legend-item"><div class="dot correct"></div> Correct (4-6)</div>
+                <div class="legend-item"><div class="dot dominant"></div> Dominant (7-10)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analyse Factuelle -->
+    <section>
+        <div class="container">
+            <h2>Ce que les chiffres ne disent pas — mais que les acheteurs voient</h2>
+            
+            <div class="constat">
+                <h4>1. Vos visuels ne racontent pas d'histoire</h4>
+                <p><strong>Observation :</strong> 3 à 4 photos standards par annonce, pas de plan, pas de visuel 3D, pas de photo des espaces communs.</p>
+                <p><strong>Preuve :</strong> Votre concurrent MYIMMO Etterbeek utilise 12+ photos avec cadrages variés pour un bien similaire à 1 450€.</p>
+                <div class="impact"><strong>Impact business :</strong> 73% des acheteurs abandonnent une annonce en moins de 30 secondes faute de visuels immersifs. Vous perdez 4 contacts sur 5 avant même le premier appel.</div>
+            </div>
+
+            <div class="constat">
+                <h4>2. Vos descriptions sont des murs de texte</h4>
+                <p><strong>Observation :</strong> Descriptif linéaire de 150 mots sans hiérarchie visuelle, sans bullets points, informations techniques noyées au milieu du texte.</p>
+                <p><strong>Preuve :</strong> L'annonce concurrente à 199 500€ sur Prince de Liège structure ses atouts en début de texte. La vôtre enterre le PEB G en milieu de paragraphe.</p>
+                <div class="impact"><strong>Impact business :</strong> Un acheteur passe en moyenne 8 secondes sur une description. S'il ne trouve pas l'info clé immédiatement, il passe à la suivante. Vous êtes invisible dans sa short-list.</div>
+            </div>
+
+            <div class="constat">
+                <h4>3. Vous cachez vos handicaps au lieu de les valoriser</h4>
+                <p><strong>Observation :</strong> PEB G et installation électrique non conforme mentionnés discrètement, sans estimation de travaux ni perspective d'amélioration.</p>
+                <p><strong>Preuve :</strong> Le bien concurrent à 199 500€ affiche aussi un PEB G mais le compense par un prix aligné et une terrasse Est. Votre différence de prix (+20 000€ pour le garage) n'est pas justifiée visuellement.</p>
+                <div class="impact"><strong>Impact business :</strong> Un PEB G + élec non conforme = blocage bancaire pour 60% des acheteurs. Sans stratégie de contournement claire, votre bien devient "intéressant mais compliqué". Résultat : des visites, pas d'offres.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avant/Après -->
+    <section style="background-color: #F9F9F9;">
+        <div class="container">
+            <h2>Ce qui change tout — 3 transformations concrètes</h2>
+            
+            <div class="before-after-grid">
+                <div class="ba-card">
+                    <div class="ba-header">Stratégie visuelle</div>
+                    <div class="ba-content">
+                        <div class="ba-item">
+                            <div class="ba-label">Avant</div>
+                            <div class="ba-text">4 photos basiques, angles standard, aucun plan</div>
+                        </div>
+                        <div class="ba-item">
+                            <div class="ba-label">Après</div>
+                            <div class="ba-text apres">15 photos professionnelles + plan 2D + visuel 3D de la vue 19ème étage</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="levier-item">
-                    <strong>Preuve</strong>
-                    Votre annonce mentionne "électricité non conforme" sans estimation [^35^]. Le concurrent à 199 500€ ne précise pas non plus, créant une parité de défiance [^63^].
+
+                <div class="ba-card">
+                    <div class="ba-header">Structure texte</div>
+                    <div class="ba-content">
+                        <div class="ba-item">
+                            <div class="ba-label">Avant</div>
+                            <div class="ba-text">Texte linéaire, PEB caché, informations noyées</div>
+                        </div>
+                        <div class="ba-item">
+                            <div class="ba-label">Après</div>
+                            <div class="ba-text apres">3 bullets d'atouts + encadré "Travaux à prévoir : 15-20k€" + estimation rentabilité</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="levier-item">
-                    <strong>Action</strong>
-                    Faire réaliser un devis électricité complet (8-12k€ estimé) et l'intégrer dans l'annonce avec la phrase : "Budget travaux prévisionnel disponible sur demande."
-                </div>
-                <div class="levier-item">
-                    <strong>Impact</strong>
-                    Transformation d'un obstacle en projet clair. Le bien passe de "risqué" à "opportunité de valorisation" pour investisseurs.
+
+                <div class="ba-card">
+                    <div class="ba-header">Positionnement prix</div>
+                    <div class="ba-content">
+                        <div class="ba-item">
+                            <div class="ba-label">Avant</div>
+                            <div class="ba-text">199 000€ + garage 20 000€, justification implicite</div>
+                        </div>
+                        <div class="ba-item">
+                            <div class="ba-label">Après</div>
+                            <div class="ba-text apres">Pack "Investisseur" 219 000€ (garage inclus) + simulation loyer estimé 1 200€/mois</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="levier">
-            <div class="levier-header">
-                <div class="levier-num">2</div>
-                <h4>Commander un shooting photo "coup de cœur"</h4>
+    <!-- Leviers d'amélioration -->
+    <section>
+        <div class="container">
+            <h2>Vos 3 leviers d'action immédiats</h2>
+            
+            <div class="levier">
+                <div class="levier-header">
+                    <div class="levier-num">1</div>
+                    <h4>Auditer et chiffrer les travaux obligatoires</h4>
+                </div>
+                <div class="levier-grid">
+                    <div class="levier-item">
+                        <strong>Problème</strong>
+                        L'électricité non conforme bloque les financements bancaires sans vision claire des coûts.
+                    </div>
+                    <div class="levier-item">
+                        <strong>Preuve</strong>
+                        Votre annonce mentionne "électricité non conforme" sans estimation. Le concurrent à 199 500€ ne précise pas non plus, créant une parité de défiance.
+                    </div>
+                    <div class="levier-item">
+                        <strong>Action</strong>
+                        Faire réaliser un devis électricité complet (8-12k€ estimé) et l'intégrer dans l'annonce avec la phrase : "Budget travaux prévisionnel disponible sur demande."
+                    </div>
+                    <div class="levier-item">
+                        <strong>Impact</strong>
+                        Transformation d'un obstacle en projet clair. Le bien passe de "risqué" à "opportunité de valorisation" pour investisseurs.
+                    </div>
+                </div>
             </div>
-            <div class="levier-grid">
-                <div class="levier-item">
-                    <strong>Problème</strong>
-                    Vos photos ne valorisent pas l'atout unique : la vue panoramique du 19ème étage.
+
+            <div class="levier">
+                <div class="levier-header">
+                    <div class="levier-num">2</div>
+                    <h4>Commander un shooting photo "coup de cœur"</h4>
                 </div>
-                <div class="levier-item">
-                    <strong>Preuve</strong>
-                    L'image de votre terrasse montre un balcon standard [^35^]. Le potentiel "vue imprenable" mentionné dans le texte n'est pas visible.
+                <div class="levier-grid">
+                    <div class="levier-item">
+                        <strong>Problème</strong>
+                        Vos photos ne valorisent pas l'atout unique : la vue panoramique du 19ème étage.
+                    </div>
+                    <div class="levier-item">
+                        <strong>Preuve</strong>
+                        L'image de votre terrasse montre un balcon standard. Le potentiel "vue imprenable" mentionné dans le texte n'est pas visible.
+                    </div>
+                    <div class="levier-item">
+                        <strong>Action</strong>
+                        Shooting crépusculaire (blue hour) depuis la terrasse + photo drone de la façade + plan de situation annoté.
+                    </div>
+                    <div class="levier-item">
+                        <strong>Impact</strong>
+                        Création d'un "moment émotionnel" différenciant. Votre bien sort de la comparaison technique pour entrer dans la sélection affective.
+                    </div>
                 </div>
-                <div class="levier-item">
-                    <strong>Action</strong>
-                    Shooting crépusculaire (blue hour) depuis la terrasse + photo drone de la façade + plan de situation annoté.
+            </div>
+
+            <div class="levier">
+                <div class="levier-header">
+                    <div class="levier-num">3</div>
+                    <h4>Réécrire votre description avec la méthode AIDA</h4>
                 </div>
-                <div class="levier-item">
-                    <strong>Impact</strong>
-                    Création d'un "moment émotionnel" différenciant. Votre bien sort de la comparaison technique pour entrer dans la sélection affective.
+                <div class="levier-grid">
+                    <div class="levier-item">
+                        <strong>Problème</strong>
+                        Votre texte décrit sans séduire. L'acheteur ne se projette pas.
+                    </div>
+                    <div class="levier-item">
+                        <strong>Preuve</strong>
+                        "Lumineux appartement 3CH avec terrasse" est générique. Le concurrent utilise "Appartement 2 chambres terrasse" avec les mêmes faiblesses.
+                    </div>
+                    <div class="levier-item">
+                        <strong>Action</strong>
+                        Nouvelle accroche : "Vue panoramique sur Bruxelles — 19ème étage — 3 chambres séparées — Idéal investisseur ou primo-accédant avec budget travaux."
+                    </div>
+                    <div class="levier-item">
+                        <strong>Impact</strong>
+                        Filtrage qualitatif des prospects (moins d'appels, plus de visites ciblées) + justification implicite du PEB par le prix et la vue.
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="levier">
-            <div class="levier-header">
-                <div class="levier-num">3</div>
-                <h4>Réécrire votre description avec la méthode AIDA</h4>
-            </div>
-            <div class="levier-grid">
-                <div class="levier-item">
-                    <strong>Problème</strong>
-                    Votre texte décrit sans séduire. L'acheteur ne se projette pas.
-                </div>
-                <div class="levier-item">
-                    <strong>Preuve</strong>
-                    "Lumineux appartement 3CH avec terrasse" est générique. Le concurrent utilise "Appartement 2 chambres terrasse" avec les mêmes faiblesses [^63^].
-                </div>
-                <div class="levier-item">
-                    <strong>Action</strong>
-                    Nouvelle accroche : "Vue panoramique sur Bruxelles — 19ème étage — 3 chambres séparées — Idéal investisseur ou primo-accédant avec budget travaux."
-                </div>
-                <div class="levier-item">
-                    <strong>Impact</strong>
-                    Filtrage qualitatif des prospects (moins d'appels, plus de visites ciblées) + justification implicite du PEB par le prix et la vue.
-                </div>
+    <!-- CTA Final -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>15 minutes. Pas de pitch. Un diagnostic honnête.</h2>
+            <p>Ces constats sont le point de départ. La question est : qu'est-ce que vous voulez faire maintenant, Alain ?</p>
+            <a href="https://cal.com/homieux-media/discovery-call-gratuit-discutons-de-vos-defis" class="cta-button">Réserver ma session — places limitées</a>
+            <p class="rarete">Nous travaillons avec un nombre limité de clients par trimestre.</p>
+        </div>
+    </section>
+
+    <!-- Footer Sources -->
+    <footer>
+        <div class="container">
+            <div class="sources">
+                <h4>Sources et références</h4>
+                <ul>
+                    <li>Analyse prospect : Alain Braem, IPI 502831, Cap Sud Etterbeek-Woluwé — <a href="https://www.cap-sud.com/agences/etterbeek-woluwe">cap-sud.com/agences/etterbeek-woluwe</a></li>
+                    <li>Annonce vente Anderlecht (21353168) — 199 000€ — <a href="https://www.immoweb.be/fr/annonce/appartement/a-vendre/anderlecht/1070/21353168">immoweb.be/fr/annonce/appartement/a-vendre/anderlecht/1070/21353168</a></li>
+                    <li>Annonce location Etterbeek (21441132) — 1 450€ — <a href="https://www.immoweb.be/fr/annonce/appartement/a-louer/etterbeek/1040/21441132">immoweb.be/fr/annonce/appartement/a-louer/etterbeek/1040/21441132</a></li>
+                    <li>Concurrent Anderlecht — 199 500€ — <a href="https://www.immoweb.be/fr/annonce/appartement/a-vendre/anderlecht/1070/20693770">immoweb.be/fr/annonce/appartement/a-vendre/anderlecht/1070/20693770</a></li>
+                    <li>Concurrent Etterbeek (MYIMMO) — 1 450€ — <a href="https://www.immoweb.be/fr/annonce/appartement/a-louer/etterbeek/1040/21471278">immoweb.be/fr/annonce/appartement/a-louer/etterbeek/1040/21471278</a></li>
+                </ul>
+                <p style="margin-top: 24px; color: #666; font-size: 13px;">Date d'analyse : 9 avril 2026. Toutes les annonces vérifiées actives à cette date.</p>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- CTA Final -->
-<section class="cta-section">
-    <div class="container">
-        <h2>15 minutes. Pas de pitch. Un diagnostic honnête.</h2>
-        <p>Ces constats sont le point de départ. La question est : qu'est-ce que vous voulez faire maintenant, Alain ?</p>
-        <a href="https://cal.com/homieux-media/discovery-call-gratuit-discutons-de-vos-defis" class="cta-button">Réserver ma session — places limitées</a>
-        <p class="rarete">Nous travaillons avec un nombre limité de clients par trimestre.</p>
-    </div>
-</section>
-
-<!-- Footer Sources -->
-<footer>
-    <div class="container">
-        <div class="sources">
-            <h4>Sources et références</h4>
-            <ul>
-                <li>Analyse prospect : Alain Braem, IPI 502831, Cap Sud Etterbeek-Woluwé — <a href="https://www.cap-sud.com/agences/etterbeek-woluwe">cap-sud.com/agences/etterbeek-woluwe</a> [^1^]</li>
-                <li>Annonce vente Anderlecht (21353168) — 199 000€ — <a href="https://www.immoweb.be/fr/annonce/appartement/a-vendre/anderlecht/1070/21353168">immoweb.be/fr/annonce/appartement/a-vendre/anderlecht/1070/21353168</a> [^35^]</li>
-                <li>Annonce location Etterbeek (21441132) — 1 450€ — <a href="https://www.immoweb.be/fr/annonce/appartement/a-louer/etterbeek/1040/21441132">immoweb.be/fr/annonce/appartement/a-louer/etterbeek/1040/21441132</a> [^32^]</li>
-                <li>Concurrent Anderlecht — 199 500€ — <a href="https://www.immoweb.be/fr/annonce/appartement/a-vendre/anderlecht/1070/20693770">immoweb.be/fr/annonce/appartement/a-vendre/anderlecht/1070/20693770</a> [^63^]</li>
-                <li>Concurrent Etterbeek (MYIMMO) — 1 450€ — <a href="https://www.immoweb.be/fr/annonce/appartement/a-louer/etterbeek/1040/21471278">immoweb.be/fr/annonce/appartement/a-louer/etterbeek/1040/21471278</a> [^41^]</li>
-            </ul>
-            <p style="margin-top: 24px; color: #666; font-size: 13px;">Date d'analyse : 9 avril 2026. Toutes les annonces vérifiées actives à cette date.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
-```
